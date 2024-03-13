@@ -1,18 +1,23 @@
 {
-    "name": "簡単コピペ",
-    "description": "URLとページ名をコピーする",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "----.html"//要編集
-    },
-    "commands": {
-        "_execute_action": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+H",
-                "mac": "MacCtrl+Shift+H"
-            },
-            "description": "Run extension."
-        }
+  "manifest_version": 3,
+  "name": "ページ情報コピー拡張機能",
+  "version": "1.0",
+  "description": "開いているページのタイトルとURLをクリップボードにコピーします。",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
     }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }
